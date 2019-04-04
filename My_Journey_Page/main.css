@@ -1,0 +1,375 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* all styling below unique to log */
+
+/* Header */
+
+header {
+  height: 68px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#top {
+  background-color: #fff;
+  border-bottom: 1px solid #E6EAEA;
+  height: 68px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-logo {
+  border-right: 1px solid #E6EAEA;
+  height: 68px;
+  vertical-align: middle;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+nav {
+  vertical-align: middle;
+  height: 68px;
+}
+
+.nav-list {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  line-height: 68px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-item {
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: .9em;
+  font-family: 'Poppins', sans-serif;
+}
+
+#mynav-item1 {
+  box-sizing: border-box;
+  border-bottom: 2px solid #63ddfe;
+  height: 68px;
+}
+
+#menu-icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 685px) {
+  #top {
+    display: inherit;
+  }
+  nav {
+    float: none;
+    width: 100%;
+    }
+  ul {
+    box-sizing: border-box;
+
+    }
+  li{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E6EAEA;
+    background-color: white;
+    font-size: 1.5em;
+    }
+  .nav-list  {
+    display: none;
+    }
+  .menu-button {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+  #menu-icon {
+    display: inline-block;
+    color: black;
+    font-size: 1.5em;
+    position: absolute;
+    right: 25px;
+    top: 22px;
+    }
+  #menu-icon:hover {
+      color: #63ddfe;
+    }
+  #mynav-item1 {
+    box-sizing: border-box;
+    border-bottom: 1px solid #E6EAEA;
+    height: 36px;
+  }
+}
+
+/* None of the CSS below is activated when I click on hamburger menu*/
+
+@media screen and (max-width: 685px) {
+    .navbar.responsive {
+      margin-left: auto;
+      margin-right: auto;
+      vertical-align: middle;
+      height: 68px;
+      display: block;
+    }
+    .nav-list.responsive {
+      box-sizing: border-box;
+      border-top: 1px solid #E6EAEA;
+    }
+  }
+
+.nav-item {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: .9em;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 850px) {
+      .nav-item{
+            font-size: .8em;
+        }
+}
+
+@media screen and (max-width: 755px) {
+      .nav-item{
+            font-size: .7em;
+        }
+    }
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5em;
+}
+
+nav a:hover {
+  color: #63ddfe;
+  text-decoration: underline;
+}
+
+/* main body */
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  padding-left: 8px;
+  font-family: raleway, sans-serif;
+  text-transform: uppercase;
+  text-decoration-color: #333;
+  letter-spacing: .2em;
+  padding-top: 80px;
+}
+
+#face-holder {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#face-pic {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top: 10px;
+  max-height: 200px;
+  padding-right: 20px;
+}
+
+#name-tag{
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+#bio {
+  width: 600px;
+  padding-left: 20px;
+  border-left: 4px solid #63ddfe;;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    width: 500px;
+}
+
+.far {
+  color: #333;
+  font-size: 2em;
+}
+
+.far:hover {
+  color: #63ddfe;
+}
+
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 1.5em;
+    padding-left: 8px;
+    font-family: raleway, sans-serif;
+    text-transform: uppercase;
+    text-decoration-color: #333;
+    letter-spacing: .2em;
+    padding-top: 80px;
+  }
+  #face-holder {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #face-pic {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 20px;
+    max-height: 200px;
+  }
+  #bio {
+    width: 450px;
+    padding-top: 15px;
+    border-top: 4px solid #63ddfe;
+    border-left: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+  }
+  p {
+    font-size: .8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  p {
+    width: 300px;
+  }
+  #bio {
+    width: 300px;
+  }
+}
+
+/* Map */
+
+h3 {
+  color: #63ddfe;
+  font-size: 1.75em;
+  font-family: poppins, open-sans;
+  font-style: italic;
+  letter-spacing: -1px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+
+
+#mapid {
+  height: 480px;
+  width: 100%;
+}
+
+.buffer {
+  height: 60px;
+  padding-bottom: 30px;
+}
+
+/* footer */
+
+
+/* Footer Licensing, links etc... */
+
+
+footer {
+  background-color: #333;
+  opacity: .7;
+  height: 35px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-social{
+  width: 215px;
+  display:block;
+  margin: 0 auto;
+  line-height: normal;
+  font-size: .7em;
+}
+
+p {
+  color: #333;
+  line-height: normal;
+  font-size: 1em;
+}
+
+.footer-list{
+  width: 33px;
+  display: inline-block;
+  padding: 0px;
+  font-size: .8em;
+  border: none;
+  background-color: inherit;
+}
+
+.footer-icons {
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+}
+.fa-instagram {
+    padding:10px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+
+}
+.fa-instagram:hover {
+    background-color: #8a3ab9;
+}
+.fa-linkedin-in {
+    padding: 10px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+
+}
+.fa-linkedin-in:hover {
+    background-color: #0073a4;
+}
+
+#footy {
+  color: #fff;
+}
+
+/* :) */

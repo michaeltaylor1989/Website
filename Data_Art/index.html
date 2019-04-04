@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Specifies the character encoding to use -->
+  <meta charset="utf-8">
+  <!-- to set to responsive design set 1:1 relationship between DIPs and Viewport CSS pictures e.g., allow to reflow content -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> | DATA ART</title>
+  <!-- My css style sheet -->
+  <link rel="stylesheet" href="main.css">
+  <!-- api to custom google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i|Poppins|Raleway|Roboto" rel="stylesheet">
+  <!-- link to hamburger menu -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!-- favicons -->
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+
+
+  <header>
+    <div id="top">
+      <a href="https://mcmtdesigns.com"><img id="header-logo" src="images/MCMT_Base_Logo.svg" alt="Nav_logo"></a>
+      <nav class="navbar" id="mynavbar">
+        <ul class="nav-list" id="mynav-list">
+          <li class="nav-item" id="mynav-item1"><a href = "https://s3.amazonaws.com/mcmtdesigns.com/my-journey/index.html" class = "menu-button">My Journey</a></li>
+          <li class="nav-item" id="mynav-item2"><a href = "https://s3.amazonaws.com/mcmtdesigns.com/data-art/index.html" class = "menu-button">Data Art</a></li>
+          <li class="nav-item" id="mynav-item3"><a href = "https://s3.amazonaws.com/mcmtdesigns.com/through-the-lens/index.html" class = "menu-button">Through the Lens</a></li>
+          <li class="nav-item" id="mynav-item4"><a href = "https://s3.amazonaws.com/mcmtdesigns.com/published-word/index.html" class = "menu-button">Published Word</a></li>
+        </ul>
+      </nav>
+      <a href="javascript:void(0);" id="menu-icon" onclick="myFunction()" onclick="myFunction2()">
+          <i class="fas fa-bars"></i>
+      </a>
+
+
+      <script>
+      function myFunction() {
+          var x = document.getElementById("mynavbar");
+          if (x.className === "navbar") {
+              x.className += "responsive";
+          } else {
+              x.className = "navbar";
+          }
+          var x = document.getElementById("mynav-list");
+          if (x.className === "nav-list") {
+              x.className += "responsive";
+          } else {
+              x.className = "nav-list";
+          }
+        }
+      </script>
+    </div>
+  </header>
+
+
+  <main>
+
+  <section>
+    <div class="buffer"></div>
+    <div class="buffer"></div>
+    <div class="title"><h2>I am a modern-day translator.</h2></div>
+    <div class="title"><p>Successfully translating millions of rows of data into actionable information requires the technical precision of an engineer and the creativity of an artist. I transform complex data into information that is useful.</p></div>
+    <div class="title"><h3>intuitive - elegant - useful</h3></div>
+    <div class="disclaimer"><p>Visualizations optmized for viewing on a desktop or tablet</p></div>
+    <div class="first">
+        <a onclick="smoothScroll(getElementById('second'))" ><i class="far fa-arrow-alt-circle-down"></i></a>
+    </div>
+    <div class="buffer"></div>
+  </section>
+
+<script>
+  window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do { //find scroll container
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+          if (target == scrollContainer) break;
+          targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+
+      scroll = function(c, a, b, i) {
+          i++; if (i > 30) return;
+          c.scrollTop = a + (b - a) / 20 * i;
+          setTimeout(function(){ scroll(c, a, b, i); }, 30);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+  }
+</script>
+
+  <section class="second" id="second">
+    <div class="buffer"></div>
+    <div class="buffer"></div>
+    <div class="buffer"></div>
+    <div class="buffer"></div>
+    <div class="buffer"></div>
+  </section>
+
+  <section>
+    <div class="data-viz">
+      <img id="shark" src="images/shark.svg" alt="shark">
+    </div>
+    <div class="data-viz"><p class="main-body">I've always been fascinated with sharks. With the recent population explosion of white sharks near my family's home on Cape Cod, I thought it's time to investigate what the data tells us about these magestic predators. Using data collected by the Shark Research Institute, I examined 5661 reported attacks from 1800-2018. Note that the data is inclusive of unsuccessful attacks too (e.g., shark bites an oar while someone is rowing.)</p></div>
+    <div class="data-viz"><p class="main-body">Let's start with the location of reported incidents. Attacks are heavily concentrated in three countries, the United States, Australia, and South Africa, which account for 67% of worldwide attacks. The rest of the countries combined come in at 31%, while attacks at sea accounted for the remaining 2%.</p></div>
+    <div class="data-viz">
+      <img id="shark" src="images/shark-map.svg" alt="shark">
+    </div>
+    <div class="data-viz"><p class="main-body">Next let's examine attacks by species with a focus on <b><font color = #EB1E2C>fatal</font></b> and <b><font color ="81D5E5">non-fatal</font></b> attacks. Four species are considered extremely dangerous (white,
+      tiger, bull, and oceanic whitetip) to humans, and the data confirms 3/4. Oceanic whitetips register few attacks, although scientists suggest that this number is underreported because they prowl the open ocean and are responsible for many deaths during sea disasters where there are few survivors.</p></div>
+    <div class="data-viz">
+      <img id="shark" src="images/species3.svg" alt="shark">
+    </div>
+    <div class="data-viz"><p class="main-body">However, shark species are just one half of the equation. How do attacks breakdown against human activities? The chart below shows the total number of attacks by <strong><font size = "+2">size</font></strong> and their fatality percent by <b><font color = #EB1E2C>color</font></b>. Swimming (37%) and sea disasters (60%) have the highest fatality rate across all species, while board sports (surfing, kayaking, stand-up paddle boarding, surf skiing) account for the most attacks (1327), but have a low fatality rate (6%). Interestingly tiger sharks have a higher propensity for board sport attacks (82) than attacks involving swimmers (55), whereas the reverse is true for bull sharks.</p></div>
+    <div class="data-viz">
+      <img id="shark" src="images/activity.svg" alt="shark">
+    </div>
+    <div class="data-viz"><p class="main-body">Now let’s take a look at how attacks have trended over time. <b><font color ="81D5E5">Non-fatal</font></b> attacks generally increased since 1800 with a large spike in the 1960s and an even larger jump since 2000, while <b><font color = #EB1E2C>fatalities</font></b> largely remained constant.</p></div>
+    <div class="data-viz">
+      <img id="shark" src="images/time.svg" alt="shark">
+    </div>
+    <div class="data-viz"><p class="main-body">There are many factors driving the increase in recorded attacks, the two most important being the increase in number of people in the water and the increase in reporting/information availability. However, these would suggest a linear increase, which we don’t see in the data.</p></div>
+    <div class="data-viz">
+      <img id="shark" src="images/act-time6.svg" alt="shark">
+    </div>
+    <div class="data-viz"><p class="main-body">The jump in attacks during the 50-60’s is partially a factor of increased provoked attacks primarily involving fishermen (e.g., clearing sharks from their nets or falling overboard) and spearfishermen (e.g., spearing or interacting with sharks). So, what gives with the dramatic drop in the 70’s? A couple of factors are at play. First, the international shark attack file was not as active during that time which lead to less records. Second, the infamous JAWS film was released in 1975 which dramatically changed the public’s opinion (and behavior) on the risks of shark attacks. Finally, fish stocks were devastated which saw a corresponding drop in fishing. Attacks grew with a vengeance over the past thirty years driven by an increase in board sports, led by the emergence of surfing.</p></div>
+    <div class="buffer"></div>
+  </section>
+
+  <section>
+    <div class="data-viz"><h4>Examining Violence During the Afghan War</h4></div>
+    <div class="data-viz"><p class="main-body">My interest in the Afghan war peaked when my National Guard unit received orders to deploy there to provide air ambulance medevac services throughout 2018-2019. The war had again slipped out of the public consciousness after NATO’s combat mission officially ended in 2014. Questions arose like: Who is winning the war? How intense is the fighting? What is my experience going to be like vis-à-vis other American soldiers who deployed to Afghanistan over the last 17 years? </p></div>
+    <div class="data-viz"><p class="main-body">While I found it difficult to get answers to these questions, I stumbled upon the Global Terrorism Database which provides a treasure trove of free information on terrorism related incidents. Using this data, I mapped terrorism related violence by week since 2001. The data shows that although our involement has waned, the Afghan war is in full swing. It’s also clear that we missed a window of opportunity for peace and reconstruction early in the war while violence was still relatively low.</p></div>
+    <div class='tableauPlaceholder' id='viz1541180791124' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Af&#47;Afghan_Violence_Radial2&#47;Incidents_Map4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Afghan_Violence_Radial2&#47;Incidents_Map4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Af&#47;Afghan_Violence_Radial2&#47;Incidents_Map4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541180791124');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='927px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <div class="data-viz"><p class="main-body">Although the recent ceasefire and peace negotiations bring hope for the people of Afghanistan, the reality remains grim. The Special Investigator General for Afghanistan Reconstruction reported in May, 2018 that the Afghan government controls or influences 229 of Afghanistan’s 407 districts (56.3 percent), the Taliban controls or influences 59 districts (14.5 percent), and the remaining 119 districts (29.2 percent) are contested...</p></div>
+    <div class="buffer"></div>
+  </section>
+
+  <section>
+    <div class="data-viz"><h4>Regression to the Mean // ESPN's Way Too Early Rankings</h4></div>
+    <div class="data-viz"><p class="main-body">The end of the NFL’s 2016 coincided with me reading Daniel Kahneman’s <i>Thinking Fast and Slow</i> which examines human biases that cloud our reasoning and distort our perception of reality. One of the concepts covered in the book is regression to the mean, a statistical phenomenon that states if a variable is extreme on its first measurement, it will tend to be closer to the average on its second measurement.</p></div>
+    <div class="data-viz"><p class="main-body">Luckily for us, the experts at ESPN provide an annual display of this human bias in the form of their Way Too Early NFL Rankings. Shortly after the NFL seasons ends, they predict team rankings for the next season. In the viz below, I compared their predictions with actual final standings. The size of the lines equal the absolute change in ranking from ESPN's Way to Early 2016 Season Ranking to actual standings at the end of the 2016-2017 NFL season. The colors represent whether the change in ranking was <b><font color="#26456E">positive</font></b> or <b><font color="#9C0824">negative.</font></b></p></div>
+    <div class='tableauPlaceholder' id='viz1541089828073' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ES&#47;ESPNNFLWayTooEarlyRankingAnalysis2&#47;2016Earlyto2016Real&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ESPNNFLWayTooEarlyRankingAnalysis2&#47;2016Earlyto2016Real' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ES&#47;ESPNNFLWayTooEarlyRankingAnalysis2&#47;2016Earlyto2016Real&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541089828073');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='850px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='850px';vizElement.style.height='727px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <div class="data-viz"><p class="main-body">In general, good teams got worse and bad teams got better (regression to the mean). However, the best teams saw the largest drop, finishing on average 8 places lower, while many mediocre teams saw a significant jump. Of course, somethings are sure bets like the cellar-dwellers Browns bringing up the rear and perennial favorites, the Patriots, remaining on top.</p></div>
+    <div class="buffer"></div>
+  </section>
+
+  <section>
+    <div class="data-viz"><h4>The Current State of Our American Nations</h4></div>
+    <div class="data-viz"><p class="main-body"><i>American Nations</i>, by historian Colin Woodard, argues that separate nation-states exist within our Republic, where dominant cultures explain our voting behaviors and attitudes toward everything from social issues to the role of government. Here we explore how these nations voted during the 2016 Presidential Election...</p></div>
+    <div class='tableauPlaceholder' id='viz1541091044810' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;AmericanNationsII&#47;AMERICANNATIONSMAP&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AmericanNationsII&#47;AMERICANNATIONSMAP' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;AmericanNationsII&#47;AMERICANNATIONSMAP&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541091044810');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='667px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='667px';} else { vizElement.style.width='100%';vizElement.style.height='1727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <div class="data-viz"><p class="main-body">My takeaway is that the largest divide amongst Americans is not their prescribed nation, but urban vs. rural. The divide is particularly evident if you fill the map by population instead of area. Nearly all democratic votes came from major population centers, while Trump carried most rural areas.</p></div>
+    <div class="data-viz"><p class="main-body">On the graph below you can explore how the American Nations compare on other demographic indicators. Differences in the American Nations are more evident when examining these indicators than when comparing voting patterns. These results suggest that there may be more than meets the eye when trying to understand the American people and our culture.</p></div>
+    <div class='tableauPlaceholder' id='viz1541091249219' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;AmericanNationsIII&#47;AMERICANNATIONSCOMPARISON&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AmericanNationsIII&#47;AMERICANNATIONSCOMPARISON' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;AmericanNationsIII&#47;AMERICANNATIONSCOMPARISON&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541091249219');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='427px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='427px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <div class="buffer"></div>
+  </section>
+
+  <section>
+    <div class="data-viz"><h4>What's Poppin' / Gunshots in the District</h4></div>
+    <div class="data-viz"><p class="main-body">As part of their open governance initiative, the District of Columbia publishes its data for public use. After my friend Pablo was robbed at gunpoint walking from the Metro to my apartment, I became interested in gun violence in the District.</p></div>
+    <div class="data-viz"><p class="main-body">When viewing gunshots recorded by day, it is easy to see that something is off. My hunch is that MPD is recording "gunshots" using sensors that pick-up noises breaking a set sound level. The spikes in "gunshots" on NYE and July 4th are likely the sensors picking up the noise emitted by fireworks.</p></div>
+    <div class='tableauPlaceholder' id='viz1541091734288' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DC&#47;DC_Gunshot_Data&#47;Swagboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DC_Gunshot_Data&#47;Swagboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DC&#47;DC_Gunshot_Data&#47;Swagboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541091734288');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='687px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='687px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <div class="data-viz"><p class="main-body">What’s fascinating is removing data from New Year’s Eve and July 4th and seeing how it impacts the most dangerous time of day (which you can do using the filter above). Without the data removed, midnight is by far the most dangerous time, likely buoyed by people lighting off fireworks. However, if you remove those holidays the most dangerous time shifts to 10:00-11:00pm, which is exactly when my friend was robbed at gunpoint.<p/></div>
+    <div class="buffer"></div>
+  </section>
+
+  <section>
+    <div class="data-viz"><h4>An Age of Champions? // MotoGP</h4></div>
+    <div class="data-viz"><p class="main-body">MotoGP is the premiere motorcycle racing league in the world. Recently they opened up their archives of data to the public. As a fan of all-time great, Valentino Rossi, I was interested in exploring the history of the sport in the context of the competition today. Right now seems to be a golden age of MotoGP, with three great world champions, Valentino Rossi, Jorge Lorenzo, and Marc Marquez all dueling it out on the track. The data supports this theory. Explore both tabs below to decide for yourself.</p></div>
+    <div class='tableauPlaceholder' id='viz1535558981171' style='position: relative'><noscript><a href='http:&#47;&#47;datachevy.blogspot.com&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MotoGP_2&#47;AHISTORYOFCHAMPIONS&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MotoGP_2&#47;AHISTORYOFCHAMPIONS' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MotoGP_2&#47;AHISTORYOFCHAMPIONS&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1535558981171');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='820px';vizElement.style.height='910px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <div class="buffer"></div>
+  </section>
+
+  <section>
+    <div class="data-viz"><h4>Health Code Violations in District Restaurants</h4></div>
+    <div class='tableauPlaceholder' id='viz1547995756834' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DC&#47;DC_Healthcode_Violations_MCMT&#47;SwagBoard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DC_Healthcode_Violations_MCMT&#47;SwagBoard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DC&#47;DC_Healthcode_Violations_MCMT&#47;SwagBoard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1547995756834');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='927px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  </section>
+
+  </main>
+
+
+  <footer>
+  <ul class="footer-social">
+    <li class="footer-list"><a href="http://instagram.com/michaelchevymayo" target="_blank" class="footer-icons"><i class="fab fa-instagram"></i></a></li>
+    <li class="footer-list"><a href="https://www.linkedin.com/in/michaeltaylor1989/" target="_blank" class="footer-icons"><i class="fab fa-linkedin-in"></i></a></li>
+    <li class="footer-list"><p id="copyright">© 2018 MCMT DESIGNS</p></li>
+  </footer>
+
+</body>

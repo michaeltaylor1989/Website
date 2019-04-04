@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Specifies the character encoding to use -->
+  <meta charset="utf-8">
+  <!-- to set to responsive design set 1:1 relationship between DIPs and Viewport CSS pictures e.g., allow to reflow content -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> | HOME</title>
+  <!-- My css style sheet -->
+  <link rel="stylesheet" href="main.css">
+  <!-- api to custom google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Raleway|Roboto" rel="stylesheet">
+  <!-- link to hamburger menu -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!-- favicons -->
+  <link rel="icon" type="image/png" href="https://s3.amazonaws.com/mcmtdesigns.com/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://s3.amazonaws.com/mcmtdesigns.com/favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+
+  <header>
+    <a href="https://mcmtdesigns.com"><img id="header-logo" src="images/MCMT_Base_Logo.svg" alt="Nav_logo"></a>
+    <nav class="navbar" id="mynavbar">
+      <ul class="nav-list" id="mynav-list">
+        <li class="nav-item" id="mynav-item1"><a href = "https://s3.amazonaws.com/mcmtdesigns.com/my-journey/index.html" class = "menu-button">My Journey</a></li>
+        <li class="nav-item" id="mynav-item2"><a href = "https://s3.amazonaws.com/mcmtdesigns.com/data-art/index.html" class = "menu-button">Data Art</a></li>
+        <li class="nav-item" id="mynav-item3"><a href = "https://s3.amazonaws.com/mcmtdesigns.com/through-the-lens/index.html" class = "menu-button">Through the Lens</a></li>
+        <li class="nav-item" id="mynav-item4"><a href = "https://s3.amazonaws.com/mcmtdesigns.com/published-word/index.html" class = "menu-button">Published Word</a></li>
+      </ul>
+    </nav>
+    <!-- Need to create expanding menu with click on hamburger -->
+    <a href="javascript:void(0);" id="menu-icon" onclick="myFunction()" onclick="myFunction2()">
+        <i class="fas fa-bars"></i>
+    </a>
+
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("mynavbar");
+        if (x.className === "navbar") {
+            x.className += "responsive";
+        } else {
+            x.className = "navbar";
+        }
+        var x = document.getElementById("mynav-list");
+        if (x.className === "nav-list") {
+            x.className += "responsive";
+        } else {
+            x.className = "nav-list";
+        }
+      }
+    </script>
+
+  </header>
+
+  <main>
+
+    <section>
+      <div id="top-spacing"></div>
+      <div id="logo-container">
+        <img id="logo" src="" alt="Title Picture"/>
+      </div>
+      <h2>the portfolio</h2>
+      <div id="top-spacing"></div>
+    </section>
+
+    <section>
+      <div class="img-container">
+        <h3 id="aviator-title">An Aviator,</h3>
+        <img class="photos" src="images/Heli_2.jpg" alt="helicopter">
+      </div>
+    </section>
+
+    <div class="buffer"></div>
+
+    <section>
+      <div><h3 id='info-title'>Information Designer,</h3></div>
+      <div class='design-container'>
+        <div class='design'>
+          <img class='pics' src='images/Step_1.svg' alt='step1'>
+            <div class='line-break'>
+              <h4>Design Thinking</h4>
+              <p>User-centered design is at the core of my approach. By focusing on the user's needs and understanding their challenges, I design data visualizations that are intuitive, useful, and elegant.</p>
+            </div>
+        </div>
+        <div class='design'>
+          <img class='pics' src='images/Step_2.svg' alt='step2'>
+          <div class='line-break'>
+            <h4>Rapid Prototyping</h4>
+            <p>Rapid prototyping helps turn ideas into realistic proofs of concept that look and function like the final product. I use wireframes and interactive mock-ups to guide our visualizations through rigorous user validation.</p>
+          </div>
+        </div>
+        <div class='design'>
+          <img class='pics' src='images/Step_3.svg' alt='step3'>
+          <div class='line-break'>
+            <h4>Insightful Solutions</h4>
+            <p>The challenge for all information designers is turning endless rows of data into meaningful tools for end-users. My visualizations provide insights by answering the key questions identified during our design thinking sessions.</p>
+          </div>
+        </div>
+        <div class="padding">
+        </div>
+      </div>
+    </section>
+
+    <div class="buffer"></div>
+
+    <section>
+      <div class="img-container">
+        <h3 id="adventure-title">and Adventurer.</h3>
+        <img class="photos" src="images/Bike.jpg" alt="Bike">
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <ul class="footer-social">
+      <li class="footer-list"><a href="http://instagram.com/michaelchevymayo" target="_blank" class="footer-icons"><i class="fab fa-instagram"></i></a></li>
+      <li class="footer-list"><a href="https://www.linkedin.com/in/michaeltaylor1989/" target="_blank" class="footer-icons"><i class="fab fa-linkedin-in"></i></a></li>
+      <li class="footer-list"><p id="footy">© 2018 MCMT DESIGNS</p></li>
+  </footer>
+
+
+</body>

@@ -1,0 +1,430 @@
+/* all styling below common */
+
+body,
+html,
+main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 10px;
+  text-decoration-color: #0a090c;
+  padding-bottom: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+footer,
+section,
+article,
+div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* all styling below unique to log */
+
+/* Header and Nav */
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #E6EAEA;
+  height: 68px;
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+#header-logo {
+  border-right: 1px solid #E6EAEA;
+  height: 68px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+nav {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  height: 68px;
+}
+
+.nav-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  line-height: 68px;
+}
+
+#menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 655px) {
+  nav {
+    float: none;
+    width: 100%;
+    }
+  ul {
+    box-sizing: border-box;
+    border-top: 1px solid #E6EAEA;
+    }
+  li{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E6EAEA;
+    background-color: white;
+    font-size: 1.5em;
+    }
+  .nav-list  {
+    display: none;
+    }
+  .menu-button {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+  #menu-icon {
+    display: inline-block;
+    color: black;
+    font-size: 2em;
+    position: absolute;
+    right: 15px;
+    top: 24px;
+    }
+  #menu-icon:hover {
+      color: #63ddfe;
+
+    }
+}
+
+/* None of the CSS below is activated when I click on hamburger menu*/
+
+@media screen and (max-width: 655px) {
+    .navbar.responsive {
+      margin-left: auto;
+      margin-right: auto;
+      vertical-align: middle;
+      height: 68px;
+      display: block;
+    }
+    .nav-list.responsive {
+      box-sizing: border-box;
+      border-top: 1px solid #E6EAEA;
+    }
+  }
+
+.nav-item {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 850px) {
+      .nav-item{
+            font-size: 1.25em;
+        }
+}
+
+@media screen and (max-width: 755px) {
+      .nav-item{
+            font-size: 1em;
+        }
+    }
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5em;
+}
+
+nav a:hover {
+  color: #63ddfe;
+  text-decoration: underline;
+}
+
+/* Main Site Content */
+
+/* logo, title, and face */
+
+#top-spacing{
+  height: 160px;
+}
+
+#logo-container{
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+#logo{
+  margin: 0 auto;
+  display: block;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #333;
+  box-shadow: 0px 4px 5px -5px #63ddfe;
+  max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 750px) {
+      #logo{
+            content:url(images/MCMT_Logo_Small.svg);
+    }
+}
+
+@media (min-width: 751px) {
+        #logo{
+            content:url(images/MCMT_Logo3.svg);
+    }
+}
+
+h2 {
+  font-family: Poppins, sans-serif;
+  color: #333;
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: 600;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 650px) {
+      h2{
+        font-size: 2em;
+    }
+}
+
+  /* CV Information */
+
+.photos {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+}
+
+.buffer {
+  width: 100%;
+  height: 85px;
+}
+
+h3 {
+  color: #63ddfe;
+  font-size: 2.5em;
+  font-family: poppins, open-sans;
+  font-style: italic;
+  letter-spacing: -1px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+
+#aviator-title {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+ @media screen and (max-width: 400px) {
+  h3 {
+      font-size: 1.5em;
+    }
+  #aviator-title {
+      top: 40px;
+      left: 20px;
+  }
+ }
+
+#info-title {
+  color: #63ddfe;
+  font-size: 2.5em;
+  font-family: poppins, open-sans;
+  font-style: italic;
+  letter-spacing: -1px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+@media screen and (max-width: 400px) {
+ #info-title{
+     font-size: 1.5em;
+     width: 200px;
+ }
+}
+
+.design-container {
+  display: flex;
+  flex-wrap:wrap;
+  width:100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 35px;
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 400px) {
+ .design-container {
+     padding-top: 0px;
+ }
+}
+
+.design {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 35px;
+}
+
+.pics {
+  max-height: 345px;
+  padding-bottom: 12px;
+}
+
+.line-break {
+  border-left: 4px solid #63ddfe;;
+}
+
+h4 {
+  font-family: serif;
+  font-size: 2em;
+  padding-left: 8px;
+  font-family: raleway, sans-serif;
+  width: 238px;
+  text-transform: uppercase;
+}
+
+p {
+  width: 238px;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  font-family: poppins, san-serif;
+  padding-left: 8px;
+  letter-spacing: .1em;
+  text-decoration-color: #333;
+}
+
+#adventure-title {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+}
+
+ @media screen and (max-width: 400px) {
+  h3 {
+      font-size: 1.5em;
+    }
+  #adventure-title {
+      top: 40px;
+      right: 20px;
+  }
+ }
+
+/* Licensing, links etc... */
+
+footer {
+  background-color: #333;
+  opacity: .7;
+  height: 32px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-social{
+  width: 215px;
+  display:block;
+  margin: 0 auto;
+  line-height: normal;
+  border-top: 0px;
+}
+
+p {
+  color: #333;
+  line-height: normal;
+  font-size: 1em;
+}
+
+.footer-list{
+  width: 33px;
+  display: inline-block;
+  padding: 0px;
+  font-size: .8em;
+  border: none;
+  background-color: inherit;
+}
+
+.footer-icons {
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+}
+.fa-instagram {
+    padding:10px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+
+}
+.fa-instagram:hover {
+    background-color: #8a3ab9;
+}
+.fa-linkedin-in {
+    padding: 10px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+
+}
+.fa-linkedin-in:hover {
+    background-color: #0073a4;
+}
+
+
+#footy {
+  color: #fff;
+}
+
+/* :) */

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Specifies the character encoding to use -->
+  <meta charset="utf-8">
+  <!-- to set to responsive design set 1:1 relationship between DIPs and Viewport CSS pictures e.g., allow to reflow content -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> | PUBLISHED WORD</title>
+  <!-- My css style sheet -->
+  <link rel="stylesheet" href="main.css">
+  <!-- api to custom google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i|Poppins|Raleway|Roboto" rel="stylesheet">
+  <!-- link to hamburger menu -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!-- favicons -->
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+</head>
+
+
+<body>
+  <header>
+    <a href="https://mcmtdesigns.com"><img id="header-logo" src="images/MCMT_Base_Logo.svg" alt="Nav_logo"></a>
+    <nav class="navbar" id="mynavbar">
+      <ul class="nav-list" id="mynav-list">
+        <li class="nav-item" id="mynav-item1"><a href = "https://s3.amazonaws.com/mcmtdesigns.com/my-journey/index.html" class = "menu-button">My Journey</a></li>
+        <li class="nav-item" id="mynav-item2"><a href = "https://s3.amazonaws.com/mcmtdesigns.com/data-art/index.html" class = "menu-button">Data Art</a></li>
+        <li class="nav-item" id="mynav-item3"><a href = "https://s3.amazonaws.com/mcmtdesigns.com/through-the-lens/index.html" class = "menu-button">Through the Lens</a></li>
+        <li class="nav-item" id="mynav-item4"><a href = "https://s3.amazonaws.com/mcmtdesigns.com/published-word/index.html" class = "menu-button">Published Word</a></li>
+      </ul>
+    </nav>
+    <a href="javascript:void(0);" id="menu-icon" onclick="myFunction()" onclick="myFunction2()">
+        <i class="fas fa-bars"></i>
+    </a>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("mynavbar");
+        if (x.className === "navbar") {
+            x.className += "responsive";
+        } else {
+            x.className = "navbar";
+        }
+        var x = document.getElementById("mynav-list");
+        if (x.className === "nav-list") {
+            x.className += "responsive";
+        } else {
+            x.className = "nav-list";
+        }
+      }
+    </script>
+  </header>
+
+  <main>
+    <div class="buffer"></div>
+    <div class="box-title"><h4>Deployment Accomplishments</h4></div>
+        <div class="data-viz"><p class="main-body">I designed a roll-up to showcase our unit's accomplishments during our deployment to Afghanistan. Enjoy!</p></div>
+    <div class="box">
+        <iframe src="https://drive.google.com/file/d/1TDoTpIsQZ8ZAeWtFk3GozYxUtKHcvnqt/preview" width="640" height="480"></iframe>
+    </div>
+    <div class="buffer"></div>
+    <div class="box-title"><h4>Visual Resume</h4></div>
+      <div class="data-viz"><p class="main-body">At the Insight Studio, all managers are tasked with vetting graduate school candidates who apply to join the team. We receive hundreds of resumes for each position and I noticed how difficult it was to get a clear picture of candidate backgrounds from traditional resumes. I decided to redesign my own to visually depict my career journey, accomplishments, and skills. The result is displayed below!</p></div>
+    <div class="box">
+      <iframe src="https://drive.google.com/file/d/1CZu4Pn7nd28cgSkb0FTU74MUf3Nq1DLP/preview" width="640" height="480"></iframe>
+    </div>
+    <div class="box-title"><h4>Low-Cost, Light-Weigth Randomized Control Trials </h4></div>
+    <div class="data-viz"><p class="main-body">Low-cost, light weight RCTs are an effective solution to determining which changes to a policy, program or communication will yield the best results.</p></div>
+    <div class="box">
+      <iframe src="https://drive.google.com/file/d/0B1WtYbkH_KNScFk2SWJMcTl0enc/preview" width="640" height="480"></iframe>
+    </div>
+    <div class="box-title"><h4>Investigative Analytics</h4></div>
+    <div class="data-viz"><p class="main-body">The investigative analytics methodology directly embeds skilled data analysts, armed with an array of dynamic analytics tools, with investigators at the forefront of the federal government’s difficult investigations.</p></div>
+    <div class="box">
+      <iframe src="https://drive.google.com/file/d/0B1WtYbkH_KNSYXVaSEwydjdwTTA/preview" width="640" height="480"></iframe>
+    </div>
+  </main>
+
+
+  <footer>
+    <ul class="footer-social">
+      <li class="footer-list"><a href="http://instagram.com/michaelchevymayo" target="_blank" class="footer-icons"><i class="fab fa-instagram"></i></a></li>
+      <li class="footer-list"><a href="https://www.linkedin.com/in/michaeltaylor1989/" target="_blank" class="footer-icons"><i class="fab fa-linkedin-in"></i></a></li>
+      <li class="footer-list"><p id="copyright">© 2018 MCMT DESIGNS</p></li>
+  </footer>
+
+</body>
